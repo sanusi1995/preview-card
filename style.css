@@ -1,0 +1,131 @@
+body { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%); 
+}
+
+.main-container {
+    background-color: hsl(244, 38%, 16%); 
+    border-radius: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.semi-container {
+    padding: 30px;
+}
+
+.semi-container h1 {
+    margin-left: 10%;
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+
+.semi-container p {
+    margin-left: 10%;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.semi-container h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.img-container img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 80%;
+    margin-left: 20%;
+    background-color: hsl(277, 64%, 61%);
+}
+
+.ctq-container {
+    display: flex;
+    padding: 10px;
+}
+
+.ctq-container ul li {
+    list-style-type: none;
+    margin-left: -10%;
+}
+
+.ctq-container ul li:first-child {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.ctq-container ul li:last-child {
+    margin-top: 5%;
+    font-size: small;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media (max-width: 375px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .semi-container {
+        padding: 20px;
+    }
+
+    .semi-container h1, .semi-container p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .img-container img {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .ctq-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ctq-container ul li {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .main-container {
+        width: 70%; 
+        max-width: 1200px;
+    }
+
+    .semi-container h1 {
+        font-size: 2rem; 
+    }
+
+    .semi-container p {
+        font-size: 1rem; 
+    }
+
+    .img-container img {
+        max-width: 90%; 
+    }
+}
